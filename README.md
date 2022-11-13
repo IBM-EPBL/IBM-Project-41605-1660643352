@@ -1,5 +1,5 @@
 <h1 align="fill" >
- <img src="coverimg.png" />
+ <img src="cover image.png" />
 </h1>
 
 # 📒 PROJECT DESCRIPTION 
