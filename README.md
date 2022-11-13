@@ -1,5 +1,7 @@
+                                               TEAM ID PNT2022TMID30329
+
 <h1 align="fill" >
- <img src="cover image.jpg" />
+ <img src="coverimage.jpg" />
 </h1>
 
 # 📒 PROJECT DESCRIPTION 
