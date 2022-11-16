@@ -25,7 +25,7 @@ char subscribetopic[] = "iot-2/cmd/command/fmt/String";// cmd  REPRESENT command
 char authMethod[] = "use-token-auth";// authentication method
 char token[] = TOKEN;
 char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;//client id
-LiquidCrystal_I2C lcd(0x27,16,2);
+LiquidCrystal_I2C lcd(0x27,32,2);
 
 //-----------------------------------------
 WiFiClient wifiClient; // creating the instance for wificlient
@@ -103,7 +103,7 @@ void callback(char* subscribetopic, byte* payload, unsigned int payloadLength)
   
   Serial.print("callback invoked for topic: ");
   Serial.println(subscribetopic);
-  for (int i = 0; i < payloadLength; i++) {
+  for (int i = 13; i < payloadLength-2; i++) {
     //Serial.print((char)payload[i]);
     data3 += (char)payload[i];
   }
